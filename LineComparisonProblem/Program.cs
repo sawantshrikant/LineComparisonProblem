@@ -16,6 +16,7 @@ namespace LineComparision
             int y2 = Convert.ToInt32(Console.ReadLine());
             CalculateLength calculateLength = new CalculateLength(x1, y1, x2, y2);
             double line1 = calculateLength.calculate();
+            Console.WriteLine(line1);
             Console.WriteLine("Enter x3: ");
             int x3 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter y3: ");
@@ -25,8 +26,10 @@ namespace LineComparision
             Console.WriteLine("Enter y4: ");
             int y4 = Convert.ToInt32(Console.ReadLine());
             CalculateLength calculateLength1 = new CalculateLength(x3, y3, x4, y4);
-            double line2 = calculateLength.calculate();
-            calculateLength1.EqualityCheck(line1, line2);
+            double line2 = calculateLength1.calculate();
+            Console.WriteLine(line2);
+            calculateLength1.equalCheck(line1, line2);
+            calculateLength1.lineCompare(line1, line2);
         }
     }
 }
