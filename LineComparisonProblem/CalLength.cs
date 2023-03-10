@@ -21,7 +21,7 @@ namespace LineComparision
             double length = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
             return length;
         }
-        public void equalChceck(double line1, double line2)
+        public void EqualityCheck(double line1, double line2)
         {
             if (line1.Equals(line2))
                 Console.WriteLine("Both lines are equal");
